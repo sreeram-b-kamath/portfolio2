@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+html, body {
+    height: 100%;
+    margin: 0;
+}
+body{
+    
+    background-color: white;
+    margin: 0;
+    color: black;
+    font-family: "Concert One", sans-serif;
+}
+#loading-page{
+    height: 100%;
+}
+#loading-page-header{
+    background-color: #086788;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    position: fixed
+}
+#navInsideHeader{
+    background-color: #086788;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    justify-content: space-evenly;
+    z-index: 2;
+}
+#navInsideHeader a{
+    text-decoration: none;
+    align-content: center;
+    color: white;
+}
+#loading-page-header {
+    position: relative; 
+}
+
+.fa-moon {
+    position: fixed;
+    right: 0;
+    top: 0;
+    padding-right: 20px;
+    padding-top: 15px;
+    font-size: 1.5em;
+    transition: all 1s ease;
+}
+.fa-moon:hover{
+    color: white;
+}
+.night-mode {
+    background-color: black; 
+    color: white; 
+  }
+#iconsInLoadPage{
+    position: absolute;
+    color: #086788;
+    top: 35%;
+    left: 15%;
+    width: 70%;
+    align-content: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+#iconsInLoadPage a{
+    text-decoration: none;
+    color: #086788;
+}
+.myicons{
+    font-size: 3em;
+    transition: all 2s ease;
+}
+.fa-envelope:hover{
+    color: beige;
+    transform: scale(1.2);
+}
+.fa-instagram:hover{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    transform: scale(1.2);
+}
+.fa-linkedin:hover{
+    background-color: lightblue;
+    transform: scale(1.2);
+}
+.fa-github:hover{
+    color: beige;
+    transform: scale(1.2);
+}
+.fa-x-twitter:hover{
+    color: beige;
+    transform: scale(1.2);
+}
+#intro-content{
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    width: 70%;
+    text-align: center;
+}
+#loading-page-hello{
+    position: relative;
+    font-size: 4rem;
+}
+#what-am-i{
+    position: relative;
+    text-align: center;
+    font-size: 2rem;
+    overflow: hidden;
+    margin: 0 auto; 
+    white-space: nowrap;
+    animation: 
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+}
+#second-page{
+    position: absolute;
+    top: 125%;
+    width: 100%; 
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100%;
+}
+#loading-page, #second-page, #third-page{
+    scroll-snap-align: start;
+    height: 100%;
+}
+#second-page-left-head{
+    position: relative;
+    padding-left: 10%;
+    font-size: 2.5rem;
+    width: 45%;
+}
+#second-page-left-content{
+    font-size: 1.5rem;
+    flex: 1;
+}
+#my-image{
+    width: 20%;
+    margin-top: 100px;
+    margin-left: 30px;
+}
+#my-image img{
+    border-radius: 50%;
+    height: 400px;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+#my-image img:hover{
+    filter: none;
+    -webkit-filter: grayscale(0);
+}
+#third-page{
+    top: 250%;
+    width: 90%;
+    position: absolute;
+    height: 100%;
+    margin-left: 10%;
+}
+#third-page-head h4{
+    font-size: 2.5rem;   
+}
+#third-page-head{
+    font-size: 1.2rem;
+}
+.project-body {
+    display: flex;
+    justify-content: space-around; /* Adjusted space distribution */
+    flex-wrap: wrap; /* Allow flex items to wrap */
+    gap: 20px; /* Add some space between project cards */
+}
+
+.project-wrapper {
+    background-color: #f0f0f0; /* Light gray background color */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Hide overflowing content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.single-project {
+    width: 300px; /* Adjust card width */
+    transition: transform 0.3s ease; /* Smooth transform transition */
+}
+
+.single-project img {
+    width: 100%;
+    height: 200px; /* Set a fixed height for images */
+    object-fit: cover; /* Ensure images cover the entire container */
+    border-radius: 10px 10px 0 0; /* Rounded corners only at the top */
+}
+
+.single-project:hover {
+    transform: translateY(-5px); /* Add a slight lift effect on hover */
+}
+
+.project-name-container {
+    padding: 10px; /* Add padding inside the container */
+    background-color: #086788; /* Dark blue background color */
+    color: white; /* White text color */
+    font-weight: bold; /* Make text bold */
+    border-radius: 0 0 10px 10px; /* Rounded corners only at the bottom */
+}
+
+#fourth-page{
+    top: 100%;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    align-content: center;
+    
+}
+#fourth-page-head{
+    justify-content: center;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+
+}
+.skills-content{
+    width: 90%;
+    display: grid;
+    text-align: center;
+    margin-left: 80px;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-rows: 200x 200px 200px 200px;
+}
+#fourth-page-head h4{
+    height: 10px;
+}
+.page-four-skill-icons{
+    font-size: 3em;
+    align-content: center;
+}
+.particular-skill{
+    position: relative;
+}
+.page-four-skill-icons{
+    transition: all 1s ease;
+}
+#particular-skill-java:hover{
+    color: #DD4B24;
+}
+#particular-skill-css:hover{
+    color: #254BDD;
+}
+#particular-skill-javascript:hover{
+    color: #E8D44D;   
+}
+#particular-skill-python:hover{
+    color: #F7D654;   
+}
+#particular-skill-java:hover{
+    color: #E61E26;   
+}
+#particular-skill-mysql:hover{
+    color: #E18302;
+}
+#particular-skill-c:hover{
+    color: #6295CB;
+}
+#particular-skill-excel:hover{
+    color: #0F773D;
+}
+
+#fifth-page{
+    top: 185%;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    align-content: center;
+    
+}
+#fifth-page-head{
+    justify-content: center;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+#fifth-page-head h4{
+    height: 10px;
+    font-size: 2.5rem;
+}
+.contact-info{
+    display: flex;
+}
+.contact-info img{
+    height: 300px;
+    margin-left: 20%;
+    margin-top: 65px;
+}
+.contact-info-content{
+    width: 50%;
+}
+.textbox{
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+}
+#contact-content{
+    height: 100px;
+}
+.send-button{
+    border-radius: 5px;
+    align-content: center;
+    width: 15%;
+}
